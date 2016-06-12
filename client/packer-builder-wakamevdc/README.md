@@ -41,6 +41,13 @@ Type: ``wakamevdc``
 
 ## Build & Install
 
+Go (>= 1.6) is recommended to build with vendored dependencies.
+
+```
+% cd client/packer-builder-wakamevdc
+% go build
+```
+
 Once you complete to build, you'll see the ``packer-builder-wakamevdc`` binary. It can be installed to:
 
 - Same folder where ``packer`` is in.
@@ -48,3 +55,6 @@ Once you complete to build, you'll see the ``packer-builder-wakamevdc`` binary. 
 - Current working directory
 
 See [Installing Plugins](https://www.packer.io/docs/extend/plugins.html) section.
+
+Vendoring management is tooled by [godep](https://github.com/tools/godep). Please follow the guide
+when you update the libraries under vendor/*.
