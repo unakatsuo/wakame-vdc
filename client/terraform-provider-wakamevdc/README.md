@@ -175,6 +175,23 @@ resource "wakamevdc_instance" "web1" {
 
 * `id` - ID for the instance
 
+# Build & Install
+
+Go (>= 1.6) is required to build with vendored dependencies.
+
+```bash
+go get github.com/axsh/wakame-vdc/client/terraform-provider-wakamevdc
+cd $GOPATH/src/github.com/axsh/wakame-vdc/client/terraform-provider-wakamevdc
+go build
+```
+
+For installation, simply copy the binary "terraform-provider-wakamevdc" to:
+
+- The location where ``PATH`` variable looks up.
+- Add conf to your ``~/.terraformrc`` in ``providers`` block.
+
+Please see [Installing a Plugin](https://www.terraform.io/docs/plugins/basics.html).
+
 # Testing the provider
 
 In this section we'll briefly explain how to run the tests included with the provider.
