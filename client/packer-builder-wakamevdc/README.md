@@ -69,5 +69,5 @@ Once you complete to build, you'll see the ``packer-builder-wakamevdc`` binary. 
 
 See [Installing Plugins](https://www.packer.io/docs/extend/plugins.html) section.
 
-Vendoring management is tooled by [godep](https://github.com/tools/godep). Please follow the guide
+Vendoring management is tooled by [govendor](https://github.com/kardianos/govendor). Please follow the guide
 when you update the libraries under vendor/*.
