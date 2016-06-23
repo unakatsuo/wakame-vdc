@@ -43,9 +43,22 @@ Type: ``wakamevdc``
 
 Go (>= 1.6) is recommended to build with vendored dependencies.
 
+Until the PR merged to develop/master branch:
+
+```bash
+go get github.com/axsh/wakame-vdc
+cd $GOPATH/src/github.com/axsh/wakame-vdc
+git checkout packer-builder
+cd client/packer-builder-wakamevdc
+go build
 ```
-% cd client/packer-builder-wakamevdc
-% go build
+
+After integrated into develop/master branch:
+
+```bash
+go get github.com/axsh/wakame-vdc/client/packer-builder-wakamevdc
+cd $GOPATH/src/github.com/axsh/wakame-vdc/client/packer-builder-wakamevdc
+go build
 ```
 
 Once you complete to build, you'll see the ``packer-builder-wakamevdc`` binary. It can be installed to:
